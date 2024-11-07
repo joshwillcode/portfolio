@@ -28,7 +28,9 @@ header h2 {
     font-size: 2em;
 }
 
-/* use JS to hide, then display on mousemove or time delay as an animation */
+/* use JS to hide, then display on mousemove or time delay 
+as an animation, add in coffee spill animation for extra 
+interest */
 nav ul {
     list-style-type: none;
     font-size: 1.25em;
@@ -36,4 +38,27 @@ nav ul {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+/* About me */
+.about-me {
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-me .text-container {
+    width: 35rem;
+}
+
+.about-me .image-container {
+    width: 30%;
+}
+
+.about-me img {
+    width: 100%;
+    height: 100%;
 }
