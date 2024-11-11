@@ -4,6 +4,10 @@ const revealNav = () => {
     const nav = document.getElementById('animation');
     nav.style.display = 'block';
     document.removeEventListener('mousemove', revealNav);
+    // add listeners for newly created Nav buttons
+    document.getElementById('2').addEventListener('click', navLink);
+    document.getElementById('3').addEventListener('click', navLink);
+    document.getElementById('4').addEventListener('click', navLink);
 }
 
 document.addEventListener('mousemove', revealNav);
@@ -35,3 +39,9 @@ const wheel = (event) => {
 }
 
 document.addEventListener('wheel', wheel);
+
+// add scrolling with Nav buttons
+const navLink = (event) => {
+    scroll = event.currentTarget.id;
+    scrollViewport();
+}
