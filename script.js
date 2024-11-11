@@ -14,7 +14,7 @@ let scroll = 1
 
 const scrollViewport = () => {
     element = document.getElementById(`scroll-${scroll}`);
-    element.scrollIntoView(true);
+    element.scrollIntoView({behavior: 'smooth', block: 'start'});
 }
 
 const wheel = (event) => {
