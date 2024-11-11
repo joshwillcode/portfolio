@@ -31,6 +31,11 @@ header h2 {
 /* use JS to hide, then display on mousemove or time delay 
 as an animation, add in coffee spill animation for extra 
 interest */
+
+nav {
+    display: none;
+}
+
 nav ul {
     list-style-type: none;
     font-size: 1.25em;
